@@ -1,0 +1,113 @@
+/* ----------------- BODY & HEART BACKGROUND ----------------- */
+body {
+    background-color: #ffe6f2; /* soft pink */
+    background-image: url('heart.jpg.jpeg'); /* your heart image */
+    background-repeat: repeat; /* repeat hearts all over */
+    background-position: center;
+    background-size: 50px 50px; /* size of each heart */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------------- MAIN CONTAINER ----------------- */
+.container {
+    background: rgba(255, 240, 245, 0.8); /* semi-transparent so hearts are visible */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ----------------- HEADING ----------------- */
+h1 {
+    color: #ff4d88; /* dark pink heading */
+    margin-bottom: 30px;
+}
+
+/* ----------------- VALENTINE PHOTO ----------------- */
+.valentine-photo {
+    width: 350px;       /* adjust between 300-400px as needed */
+    height: auto;       /* keeps aspect ratio */
+    display: block;
+    margin: 20px auto;  /* centers the photo */
+    border-radius: 15px; /* optional: rounded edges for cuteness */
+}
+
+/* ----------------- BUTTONS ----------------- */
+.buttons {
+    display: flex;
+    flex-direction: column; /* buttons stacked vertically */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 24px;
+    font-family: 'Comic Sans MS', cursive;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#yesBtn {
+    background-color: #ff4d88;
+    color: white;
+}
+
+#noBtn {
+    background-color: #ff99bb;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* ----------------- POPUP ----------------- */
+.popup {
+    display: none; /* Hide popup initially */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 182, 193, 0.7); /* semi-transparent pink */
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #fff0f5;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.popup-content img {
+    width: 350px;       /* same size as main photo */
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.popup-content h2 {
+    color: #ff4d88;
+}
+
+.popup-content button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #ff4d88;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
